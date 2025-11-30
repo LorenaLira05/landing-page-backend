@@ -1,0 +1,301 @@
+/*  BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f3ece6;
+    color: #6b5c4a;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* CABEÇALHO */
+header {
+    background: #e7d8c9;
+    padding: 20px 0;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.05);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #6b5c4a;
+}
+
+.logo span {
+    color: #b48a72;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6b5c4a;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #b48a72;
+}
+
+/*  BOTÃO  */
+.botao {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #e6c7ab;
+    color: #6b5c4a;
+    border-radius: 22px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #d8b49c;
+    transform: translateY(-3px);
+}
+
+/* INÍCIO */
+.inicio {
+    text-align: center;
+    padding: 120px 0 90px;
+    background: #f3ece6;
+}
+
+.texto-inicio h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3.4rem;
+    color: #b48a72;
+    margin-bottom: 15px;
+}
+
+.texto-inicio p {
+    font-size: 1rem;
+    max-width: 620px;
+    margin: auto;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/*  SERVIÇOS */
+.secao-servicos {
+    padding: 90px 0;
+    background: #f7f3ef;
+}
+
+.titulo-secao2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-secao2 h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.8rem;
+    color: #b48a72;
+}
+
+.titulo-secao2 p {
+    max-width: 600px;
+    margin: 12px auto 0;
+    line-height: 1.6;
+}
+
+.grade-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.cartao-servico {
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+    transition: 0.35s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.cartao-servico:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+}
+
+.cartao-servico img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.cartao-servico p {
+    text-align: center;
+}
+
+.icone-servico {
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+}
+
+/*  PORTFÓLIO */
+.secao-portfolio {
+    padding: 48px 0;
+}
+
+.grade-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/*  SOBRE */
+.sobre-nos-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.titulo-equipe {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #b48a72;
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sobre-fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.foto-equipe {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.texto-equipe h3 {
+    font-size: 1.4rem;
+    color: #6b5c4a;
+}
+
+.texto-equipe p {
+    font-size: 0.95rem;
+    color: #6b7280;
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+/*  CONTATO */
+.contato {
+    padding: 90px 0;
+    background: #f3ece6;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-secao h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.6rem;
+    color: #b48a72;
+}
+
+.info-contato {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.formulario-contato {
+    flex: 1;
+}
+
+.campo-form {
+    margin-bottom: 18px;
+}
+
+.controle-form {
+    width: 100%;
+    padding: 12px;
+    border-radius: 18px;
+    background: #f7f3ef;
+    border: 1.5px solid #d7c5b6;
+}
+
+textarea.controle-form {
+    height: 120px;
+    resize: none;
+}
+
+.controle-form:focus {
+    border-color: #b48a72;
+    outline: none;
+}
+
+/* RODAPÉ*/
+footer {
+    background: #e7d8c9;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+.links-sociais a {
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+.links-sociais a:hover {
+    color: #ff4da6;
+}
+
+/*  RESPONSIVO */
+@media (max-width: 768px) {
+
+}
